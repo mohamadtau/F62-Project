@@ -1,0 +1,382 @@
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+body {
+  background: white;
+  color: #a5b0ad;
+  font-family: "Anton", sans-serif;
+}
+
+a {
+  color: #0fbcf9;
+  transition: 0.5s;
+}
+
+a:hover {
+  color: #0fbcf9;
+  outline: none;
+  text-decoration: none;
+}
+
+p {
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+/* Header*/
+#header {
+  padding: 30px 0;
+  height: 92px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: all 0.5s;
+  z-index: 997;
+}
+
+#header .logo {
+  float: left;
+  font-size: 14px;
+  margin-left: 30px;
+  margin-top: 2px;    
+}
+
+/* Header-dua*/
+#intro {
+  display: table;
+  width: 100%;
+  height: 100px;
+  background: #000;
+}
+
+#intro .intro-item {
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#intro .intro-item::before {
+  content: '';
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+#intro .int-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#intro .intro-content {
+  text-align: center;
+}
+
+#intro h2 {
+  color: #8dfcce;
+  margin-bottom: 30px;
+  font-size: 48px;
+  font-weight: 700px;  
+}
+
+#intro .btn-pelajari {
+  font-style: bold;    
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 8px 32px;
+  border-radius: 40px;
+  transition: 0.5s;
+  margin: 10px;
+  color: #fff;
+  background: #34ebd8;
+}
+
+#intro .btn-pelajari:hover {
+  background: #cc34eb;
+  color: black;
+}
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/* Nav Menu Essentials */
+.nav-menu, .nav-menu * {  
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-menu ul {
+  position: absolute;
+  display: none;
+  top: 100%;
+  left: 0;
+  z-index: 99;
+}
+
+.nav-menu li {
+  position: relative;
+  white-space: nowrap;
+}
+
+.nav-menu > li {
+  float: left;
+}
+
+.nav-menu li:hover > ul,
+.nav-menu li.Hover > ul {
+  display: block;
+}
+
+#nav-menu-container a {
+  background-color: #452b45;
+  line-height: 30px;
+  padding: 0 25px; 
+  display: block;
+  margin-left: 50px;  
+  transition: all 0.5s;
+}
+
+#nav-menu-container a:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Nav Menu Style */
+.nav-menu a {
+  padding: 0 8px 10px 8px;
+  padding-left: 50px;
+  text-decoration: none;
+  display: inline-block;
+  color: #3df571;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.nav-menu li:hover > a, .nav-menu > .menu-active > a {
+  color: #8dfcce;
+}
+
+/* Sections */
+
+.section-header h3 {
+  font-size: 32px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+
+/* Tentang Kami*/
+#tentang {
+  background: url("../img/peta-1.png");
+  background-size: cover;
+  padding: 60px 20px 40px 0;
+  margin: 30px;
+  position: relative;  
+}
+
+#tengah .kiri {
+  clear: both;
+  float: left;  
+}
+
+#tengah .kanan {
+  clear: both;  
+  float: right;
+}
+
+
+h2, p {
+  text-align: center;
+  margin: 30px;
+}
+
+h2 {
+font-size: 40px;
+}
+
+#tentang::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.92);
+  z-index: 9;
+}
+
+#tentang .container {  
+  justify-content: center;
+  align-items: center;  
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+}
+
+
+#tentang .container {
+  position: relative;
+  z-index: 10;
+}
+
+
+#tentang .container {
+  position: relative;
+  z-index: 10;
+}
+
+
+.img img {
+  height: 10%;
+  width: 50%;
+  padding: 10px;
+}
+
+.img {
+  margin-left: 35%;
+}
+
+/* Team*/
+
+#team {
+  background: #fff;
+  padding: 60px 0;    
+}
+
+#team .member {
+  text-align: center;
+  margin-bottom: 20px;
+  background: #000;
+  position: relative;
+  float: left;
+  margin-left: 4.5%;  
+}
+
+#team .member .member-info {
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  transition: 0.2s;
+}
+
+#team .member .member-info-content {
+  margin-top: -50px;
+  transition: margin 0.2s;
+}
+
+#team .member:hover .member-info {
+  background: rgba(0, 0, 0, 0.7);
+  visibility: visible;
+  transition: 0.4s;
+}
+
+#team .member:hover .member-info-content {
+  margin-top: 0;
+  transition: margin 0.4s;
+}
+
+#team .member h4 {
+  font-weight: 700;
+  margin-bottom: 2px;
+  font-size: 18px;
+  color: #fff;
+}
+
+
+
+
+/* Ayo Bergabung
+--------------------------------*/
+#btn-wrapper {
+  text-align: center;
+  float: left;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  margin-left: 35%; 
+}
+
+#btn-wrapper h3 {
+  font-height: 700px;
+  font-size: 30px;
+  margin: 30px 30px 50px 0;
+  color: black  
+}
+
+#btn-wrapper p {
+  margin-top: 20px;
+  }
+
+.signup {
+  background-color: #239b76;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.btn {
+  padding: 12px 24px;
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 2;
+  color: black;
+}
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+  clear: both;
+  background: #000;
+  padding: 0 0 30px 0;
+  color: #eee;
+  font-size: 14px;
+}
+
+#footer .copyright {
+  text-align: center;
+  padding-top: 30px;
+}

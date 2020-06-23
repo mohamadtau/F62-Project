@@ -1,0 +1,53 @@
+#intro {
+    background-color: #55acee;
+    position: relative;
+    -webkit-animation-name: intro; 
+    -webkit-animation-duration: 4s;
+    animation-name: intro;
+    animation-duration: 4s;
+    animation-iteration-count: 5;
+}
+
+@-webkit-keyframes intro {
+    0%   {background-color:#55acee;}
+    25%  {background-color:green;}
+    50%  {background-color:blue;}
+    75%  {background-color:yellow;}
+    100% {background-color:black;}
+}
+
+
+@keyframes intro {
+    0%   {background-color:white;}
+    25%  {background-color:green;}
+    50%  {background-color:blue;}
+    75%  {background-color:yellow;}
+    100% {background-color:black;}
+}
+
+.btn-pelajari {
+    background-color: #55acee;
+    position: relative;
+    -webkit-animation-name: intro; 
+    -webkit-animation-duration: 4s;
+    animation-name: intro;
+    animation-duration: 4s;
+    animation-iteration-count: 5;
+}
+
+@-webkit-keyframes intro {
+    0%   {background-color:#55acee;}
+    25%  {background-color:green;}
+    50%  {background-color:blue;}
+    75%  {background-color:yellow;}
+    100% {background-color:black;}
+}
+
+
+@keyframes intro {
+    0%   {background-color:white;}
+    25%  {background-color:green;}
+    50%  {background-color:blue;}
+    75%  {background-color:yellow;}
+    100% {background-color:black;}
+}
